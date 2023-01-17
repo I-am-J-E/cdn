@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #54555E;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2D95E3;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content-box, .style-rounded .card, .style-rounded .card__body, .style-rounded input, .style-rounded select, .style-rounded textarea, .style-rounded .social, .style-rounded .entry__meta-category--label, .style-rounded .owl-prev, .style-rounded .owl-next, .style-rounded .thumb__img-holder, .style-rounded .entry__play-time, .style-rounded .pagination__page, .style-rounded #back-to-top, .style-rounded .btn, .style-rounded .sidebar .widget {
+    border-radius: 5px;
+}
+
+.top-bar {
+    background-color: #171821;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-menu a {
+    display: block;
+    padding: 0 10px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.top-menu li {
+    display: inline-block;
+    font-size: 14px;
+    width: auto;
+}
+
+.top-menu li:first-child a {
+    padding-left: 0;
+}
+
+.top-bar .social {
+    color: #fff;
+}
+
+.socials {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.socials--nobase a {
+    width: 13px;
+    height: auto;
+    border: 0;
+    line-height: 32px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    color: #54555E;
+    background-color: transparent;
+}
+
+.nav {
+    min-height: 48px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 120;
+    position: relative;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+}
+
+.nav__holder {
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+header .flex-parent {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-child {
+    -webkit-box-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+}
+
+header .flex-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    line-height: 1;
+}
+
+.nav-icon-toggle {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: 0.15s linear;
+    transition: 0.15s linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin-right: 20px;
+    overflow: visible;
+}
+
+.nav-icon-toggle__box {
+    width: 18px;
+    height: 20px;
+    position: relative;
+    display: block;
+}
+
+.nav-icon-toggle__inner {
+    display: block;
+    top: 35%;
+    margin-top: -1px;
+    margin-left: 3px;
+    width: 15px;
+}
+
+.nav__wrap {
+    padding-left: 40px;
+}
+
+.top60 {
+    top: 60% !important;
+}
+
+.top85 {
+    top: 85% !important;
+}
+
+.nav-icon-toggle__inner, .nav-icon-toggle__inner:before, .nav-icon-toggle__inner:after {
+    height: 2px;
+    background-color: #171821;
+    position: absolute;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.logo {
+    line-height: 1;
+}
+
+.nav__menu, .nav__dropdown-menu {
+    list-style: none;
+}
+
+.nav__menu {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.nav__menu > li {
+    position: relative;
+}
+
+
+.trending-now {
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 24px;
+    height: 36px;
+    -webkit-box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+}
+
+.trending-now__label {
+    background-color: #2D95E3;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    color: #fff;
+    padding: 0 16px;
+    line-height: 36px;
+    height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.trending-now__text {
+    margin-left: 5px;
+}
+
+.newsticker {
+    padding-right: 80px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.newsticker__item {
+    line-height: 36px;
+    white-space: nowrap;
+}
+
+.newsticker__item-url {
+    color: #54555E;
+}
+
+.newsticker__item-url:hover {
+    color: #2D95E3;
+}
+
+@media (min-width: 992px) {
+    .d-lg-block {
+        display: block !important;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    .nav__menu > li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .py-2\.5 {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .d-lg-inline-block {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1248px;
+    }
+
+    .d-lg-block {
+        display: block !important;
+    }
+
+    .nav__menu > li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .py-2\.5 {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
+
+
